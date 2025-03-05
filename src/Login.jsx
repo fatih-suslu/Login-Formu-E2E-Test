@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "./App.css";
 import {
   Form,
   FormGroup,
@@ -95,7 +96,7 @@ export default function Login() {
         );
         if (user) {
           setForm(initialForm);
-          history.push('/main');
+          history.push('/success');
         } else {
           history.push('/error');
         }
